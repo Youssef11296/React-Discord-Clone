@@ -1,0 +1,164 @@
+/* Sidebar Style */
+
+.sidebar {
+    flex: .25;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+}
+
+
+/* Sidebar Header Style */
+
+.sidebar__header {
+    padding: .2rem .4rem;
+    border-bottom: 2px solid #26282c;
+}
+
+.sidebar__headerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding-left: .6rem;
+}
+
+.sidebar__headerTop .MuiSvgIcon-root {
+    color: var(--gray);
+    font-size: 2rem;
+}
+
+.sidebar__headerTop .MuiSvgIcon-root:hover {
+    color: #fff;
+}
+
+
+/* Sidebar Channels Style */
+
+.sidebar__channels {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__channelsHeader {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+}
+
+.sidebar__channelsHeaderLeft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.sidebar__channelsHeaderLeft:hover {
+    color: #fff;
+}
+
+.sidebar__channelsHeader .MuiSvgIcon-root {
+    font-size: 1.6rem;
+}
+
+.sidebar__addChannel {
+    color: var(--gray);
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.sidebar__addChannel:hover {
+    color: #fff;
+}
+
+
+/* Sidebar Channels Header & List Style */
+
+.sidebar__channelsHeader {
+    padding-left: .6rem;
+}
+
+.sidebar__channelsList {
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+
+/* Fixing The Horrible Scroll Bar For The Whole Browsers */
+
+.sidebar__channelsList::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar__channelsList {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+/* Sidebar Voice & Profile Style */
+
+.sidebar__voice,
+.sidebar__profile {
+    display: flex;
+    align-items: center;
+    padding: .4rem .6rem;
+    border-top: 1px solid var(--light-gray);
+}
+
+.sidebar__voice>.MuiSvgIcon-root {
+    font-size: 3rem !important;
+    color: var(--green) !important;
+}
+
+.sidebar__voiceInfo,
+.sidebar__profileInfo {
+    flex: 1;
+    margin: 0 .4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__voice h3,
+.sidebar__profileInfo h3 {
+    font-size: 1.6rem;
+    color: var(--green);
+}
+
+.sidebar__voice p,
+.sidebar__profileInfo p {
+    color: var(--gray);
+    font-size: smaller;
+}
+
+.sidebar__voiceIcons,
+.sidebar__profileIcons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar__voiceIcons .MuiSvgIcon-root,
+.sidebar__profileIcons .MuiSvgIcon-root {
+    font-size: 2rem !important;
+    margin: 6px;
+    color: var(--gray);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sidebar__voiceIcons .MuiSvgIcon-root:hover,
+.sidebar__profileIcons .MuiSvgIcon-root:hover {
+    color: #fff;
+}
+
+
+/* Sidebar Avatar Style */
+
+.sidebar__profileAva {
+    cursor: pointer;
+    margin: 10px;
+}

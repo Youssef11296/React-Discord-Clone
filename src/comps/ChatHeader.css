@@ -1,0 +1,66 @@
+.chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+}
+
+.chatHeader__left h3 {
+    display: flex;
+    align-items: center;
+}
+
+.chatHeader__left h3 {
+    color: #fff;
+}
+
+.chatHeader__left h3 .chatHeader__hash {
+    color: var(--gray);
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.chatHeader__right {
+    display: flex;
+    align-items: center;
+}
+
+.chatHeader__search {
+    margin: 0 1rem;
+    padding: 0 .6rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+.chatHeader__search .MuiSvgIcon-root {
+    color: var(--gray);
+    transition: .3s;
+}
+
+.chatHeader__search .MuiSvgIcon-root:hover {
+    color: #fff;
+}
+
+.chatHeader__search input {
+    margin: 0 10px;
+    padding: .4rem 0;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.chatHeader__right>.MuiSvgIcon-root,
+.chatHeader__search>.MuiSvgIcon-root {
+    transition: .3s;
+    cursor: pointer;
+    margin: 0 .2rem;
+}
+
+.chatHeader__right>.MuiSvgIcon-root:hover,
+.chatHeader__search>.MuiSvgIcon-root:hover {
+    color: #fff;
+}

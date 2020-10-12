@@ -1,0 +1,28 @@
+.sidebarChannel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--gray);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sidebarChannel:hover {
+    color: #fff;
+    background-color: #40464b;
+}
+
+.sidebarChannel__left {
+    display: flex;
+    align-items: center;
+}
+
+.sidebarChannel__hash {
+    font-size: 3rem;
+    margin: 0 10px;
+}
+
+.sidebarChannel__name {
+    font-size: 1.4rem;
+    font-weight: 600;
+}

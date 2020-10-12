@@ -1,0 +1,30 @@
+.message {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 1.4rem;
+    width: fit-content;
+    padding: .4rem .6rem;
+    border-radius: 10px;
+    background-color: #e1e1e1;
+}
+
+.message__info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message__info .message__username {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.message p {
+    margin-left: 20px;
+    font-size: smaller;
+    color: var(--gray);
+}
+
+.message__text {}
